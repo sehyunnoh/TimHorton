@@ -1,0 +1,89 @@
+/* common */
+body {
+  background: rgb(235, 222, 205);
+  color: rgb(99, 61, 19);
+}
+
+/* index.html */
+.container {
+  padding: 10px 150px;
+}
+
+.header > img {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.form1,
+.form2 {
+  border: 2px solid rgb(99, 61, 19);
+  margin-top: 50px;
+  padding-left: 120px;
+  padding-bottom: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 140px;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 50px;
+  text-align: center;
+}
+
+input[type="submit"],
+input[type="radio"] {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    padding: 0px;
+  }
+
+  .form1,
+  .form2 {
+    border: 2px solid rgb(99, 61, 19);
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+/* order.php */
+.order {
+  border: 2px solid rgb(99, 61, 19);
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.small {
+  height: 100px;
+}
+
+.medium {
+  height: 150px;
+}
+
+.large {
+  height: 200px !important;
+}
+
+.exLarge {
+  height: 250px;
+}
+
+#price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

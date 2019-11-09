@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tim Horton's Orders</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="header">
+        <img src="./images/logo-en.jpg" alt="Tim horton image" />
+      </div>
+
+      <div class="title">
+        <h1>Welcome to Tim Horton's!</h1>
+      </div>
+
+      <div class="form1">
+        <h2>Give us some numbers...</h2>
+        <form action=order.jsp method="POST">
+          <label for="numbers">Numbers of Coffees: </label>
+          <input type="number" id="numbers" min="1" name="numbers" value="1" required />
+          <br />
+          <label for="size">Size</label>
+          <select name="size" id="size" required>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="exLarge">Extra large</option>
+          </select>
+          <br />
+          <label for="creams">How many creams?</label>
+          <input type="number" id="creams" min="0" name="creams" value="0" required />
+          <br />
+          <label for="sugars">How many sugars?</label>
+          <input type="number" id="sugars" min="0" name="sugars" value="0" required />
+          <br />
+          <input type="hidden" name="action" value="form1" />
+          <input type="submit" value="Order Coffee" />
+        </form>
+      </div>
+
+      <div class="form2">
+        <h2>...or use the slang!</h2>
+        <form action="order.jsp" method="POST">
+          <input type="number" id="numbers" min="1" name="numbers" value="1" required />
+          <select name="size" id="size" required>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="exLarge">Extra large</option>
+          </select>
+          <br />
+          <input type="radio" name="slang" value="r" checked />Regular <br />
+          <input type="radio" name="slang" value="dd" />Double Double <br />
+          <input type="radio" name="slang" value="tt" />Triple Triple <br />
+          <input type="radio" name="slang" value="b" />Black <br />
+          <input type="radio" name="slang" value="bos" />Black One Sugar <br />
+          <input type="radio" name="slang" value="bts" />Black Two Sugars <br />
+          <input type="radio" name="slang" value="bths" />Black Three Sugars
+          <br />
+          <input type="hidden" name="action" value="form2" />
+          <input type="submit" value="Order Coffee" />
+        </form>
+      </div>
+      
+    </div>
+  </body>
+</html>
